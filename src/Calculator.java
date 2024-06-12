@@ -250,13 +250,13 @@ class Calculator extends JFrame {
                     jTextField.setText(String.valueOf(Double.parseDouble(holder)+Double.parseDouble(jTextField.getText())));
                     holderField.setText(jTextField.getText());
                 } else if (Sign.equals("-")&& !jTextField.getText().isEmpty()&&holderField.getText().length()<=10) {
-                    jTextField.setText(String.valueOf(Double.parseDouble(holder)+Double.parseDouble(jTextField.getText())));
+                    jTextField.setText(String.valueOf(Double.parseDouble(holder)-Double.parseDouble(jTextField.getText())));
                     holderField.setText(jTextField.getText());
                 } else if (Sign.equals("x")&& !jTextField.getText().isEmpty()&&holderField.getText().length()<=10){
-                    jTextField.setText(String.valueOf(Double.parseDouble(holder)+Double.parseDouble(jTextField.getText())));
+                    jTextField.setText(String.valueOf(Double.parseDouble(holder)*Double.parseDouble(jTextField.getText())));
                     holderField.setText(jTextField.getText());
                 } else if (Sign.equals("/")&& !jTextField.getText().isEmpty()&&holderField.getText().length()<=10){
-                    jTextField.setText(String.valueOf(Double.parseDouble(holder)+Double.parseDouble(jTextField.getText())));
+                    jTextField.setText(String.valueOf(Double.parseDouble(holder)/Double.parseDouble(jTextField.getText())));
                     holderField.setText(jTextField.getText());
                 } else {
                     jTextField.setText("");
